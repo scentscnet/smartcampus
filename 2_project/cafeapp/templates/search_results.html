@@ -1,0 +1,15 @@
+
+
+
+<!--{% load keywordimportance from tfidf712 %}-->
+
+<h1>Search Results</h1>
+objectlist : {{obeject_list}}
+for문 : 
+<!--{{object_list}}-->
+{% for Subject in object_list %} 
+    <li>
+      학수번호 {{ Subject.series_num }}, 과목명 {{ Subject.name }},명사추출 : {{ Subject.words }},id :{{ Subject.id }}
+      and, 그냥 subject : {{Subject}} then </li></a>
+      
+{% endfor %}
